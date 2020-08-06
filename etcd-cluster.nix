@@ -19,7 +19,6 @@ let
     ephemeral = true;
     autoStart = true;
     privateNetwork = true;
-    timeoutStartSec = "5min";
 
     config = { config, pkgs, ... }:
       {
