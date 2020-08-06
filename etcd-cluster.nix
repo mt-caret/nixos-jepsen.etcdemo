@@ -65,7 +65,7 @@ let
         # https://github.com/NixOS/nixpkgs/pull/81371#issuecomment-605526099).
         # The etcd service is of type "notify", which means that
         # etcd would not be considered started until etcd is fully online;
-        # however, since networking only works sometime *after*
+        # however, since NixOS container networking only works sometime *after*
         # multi-user.target, we forgo etcd's notification entirely.
         systemd.services.etcd.serviceConfig.Type = lib.mkForce "exec";
 
